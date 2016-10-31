@@ -44,5 +44,13 @@ REPOSITORY=${WERCKER_GITHUB_PULLREQUEST_REPOSITORY}
 TOKEN=${WERCKER_GITHUB_PULLREQUEST_TOKEN}
 TITLE=${WERCKER_GITHUB_PULLREQUEST_TITLE}
 
+echo ${USER}
+echo ${REPOSITORY}
+echo ${TOKEN}
+echo ${TITLE}
+echo ${BODY}
+echo ${FROM}
+echo ${TO}
+
 
 curl -u "${USER}:${TOKEN}" -d '{"title": "${TITLE}","body": "${BODY}","head": "${USER}:${FROM}","base": "${TO}"}'  https://api.github.com/repos/${USER}/${REPOSITORY}/pulls
