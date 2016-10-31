@@ -7,9 +7,6 @@ properties:
   user:
     type: string
     required: true
-  repository:
-    type: string
-    required: true
   token:
     type: string
     required: true
