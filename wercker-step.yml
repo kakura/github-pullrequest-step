@@ -1,0 +1,28 @@
+name: github-pullrequest
+version: 0.0.1
+description: Pull request to Github
+keywords:
+  - github
+properties:
+  user:
+    type: string
+    required: true
+  repository:
+    type: string
+    required: true
+  token:
+    type: string
+    required: true
+  title:
+    type: string
+    required: true
+  body:
+    type: string
+    required: false
+  from:
+    type: string
+    default: all
+    required: false
+  to:
+    type: string
+    required: false
