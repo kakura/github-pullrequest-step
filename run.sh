@@ -5,11 +5,6 @@ if [ ! -n "${WERCKER_GITHUB_PULLREQUEST_USER}" ]; then
   exit 1
 fi
 
-if [ ! -n "${WERCKER_GITHUB_PULLREQUEST_REPOSITORY}" ]; then
-  error 'Please specify repository property'
-  exit 1
-fi
-
 if [ ! -n "${WERCKER_GITHUB_PULLREQUEST_TOKEN}" ]; then
   error 'Please specify token property'
   exit 1
