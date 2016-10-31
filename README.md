@@ -4,11 +4,17 @@ github pull request step in wercker
 ### how to use
 
 Add ${user}.(ex: kakura)
+
 Add ${repository}.Github repository name
+
 Add ${token}.Github token
+
 Add ${title}.pull title
+
 Add ${body}.pull body
+
 Add ${from}.from branch name
+
 Add ${to}.to branch name
 
 
