@@ -48,7 +48,7 @@ echo ${FROM}
 echo ${TO}
 
 url=https://api.github.com/repos/${WERCKER_GIT_OWNER}/${REPOSITORY}/pulls
-data='{"title": "${TITLE}","body": "${BODY}","head": "${USER}:${FROM}","base": "${TO}"}'
+data="{\"title\":\"${TITLE}\",\"body\":\"${BODY}\",\"head\":\"${USER}:${FROM}\",\"base\":\"${TO}\"}"
 echo ${url}
 echo ${data}
 
